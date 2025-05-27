@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ananya Daniel</title>
-    <link rel="stylesheet" href="/static/appearance.css">
-    <link rel="icon" type="image/png" href="/static/images/Avatar.png">
+    <link rel="stylesheet" type=""href="static/appearance.css">
+    <link rel="icon" type="image/png" href="static/images/Avatar.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -54,7 +54,7 @@
             </section>
             <section class="frontside">
                 <model-viewer id="avatar" 
-                    src="static/images/3davatar.glb" 
+                    src="static/images/davatar.glb" 
                     alt="My Avatar" 
                     auto-rotate 
                     disable-tap 
@@ -119,6 +119,7 @@
                   <p>I attended the INSA summer camp, where I gained valuable experience and skills in software development and other areas of computer science.</p>
                 </div>
               </div>
+              
             </div>
         </section>
           
@@ -152,8 +153,31 @@
                 <div class="protext">
                 <h2>WellBeat - Website</h2>
                 <p>A web application featuring AI-powered dietary suggestions, a user-friendly interface, and a chat platform for users and their personal doctors. Developed with HTML, CSS, JavaScript, Bootstrap, Flask, and Python.</p>
-            </div>
-        </div>
+            </div></div>
+             <div class="project5" id="pro">
+                <img src="static/images/gebeta.png" classs="imgg" alt="">
+                <div class="protext">
+                <h2>Gebeta Reloaded</h2>
+                <p>a web-based adaptation that bridges cultural preservation of  Ethiopian traditional game called Gebeta (ገበጣ) and modern programming education.</p>
+            </div></div>
+            <div class="project6" id="pro">
+                <img src="static/images/brokerase.png" classs="imgg" alt="">
+                <div class="protext">
+                <h2>BrokerEase</h2>
+                <p>It is a web-application developed by ASP.NET. BrokerEase serves as a tool for brokers to manage the employees and employers they connect and their overall job</p>
+            </div></div>
+            <div class="project7" id="pro">
+                <img src="static/images/textile.png" classs="imgg" alt="">
+                <div class="protext">
+                <h2>Texttile ERP System</h2>
+                <p>I am currently working on a project that helps more than 3 million people in my country that works on in the textile factory by making a smart, digital managment system!</p>
+            </div></div>
+            <div class="project8" id="pro">
+                <img src="static/images/GL.jpg" classs="imgg" alt="">
+                <div class="protext">
+                <h2>Green Legacy</h2>
+                <p>Green Legacy is an initiative in my country, <em>Ethiopia</em>, that conserve the balance of nature by planting tree all over the country. I developed a website that describes what this initiative is including other necessary things.</p>
+            </div></div>
         </section>
     
         <section class="contactme" id="contactme">
@@ -194,7 +218,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('.whoami', {
-            strings: ['a high school student.', 'a passionate developer.'],
+            strings: ['a high school student.', 'a passionate developer.','Ethiopian Teenager.'],
             typeSpeed: 100,
             backSpeed: 80,
             loop: true
@@ -216,6 +240,7 @@
             hamburger.classList.toggle('open');
         });
     </script>
+
   
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script>
@@ -237,7 +262,7 @@
             })
             .catch((error) => {
                 alert("Failed to send the message. Please try again.");
-                console.error("Error:", error);
+                console.error("Error:", error);6
             });
     });
 </script>
@@ -245,14 +270,7 @@
   document.getElementById("contactbtn").addEventListener("click", function() {
     document.getElementById("contactme").scrollIntoView({ behavior: "smooth" });
   });
-  const projects = document.querySelectorAll('.project');
-
-projects.forEach((project, index) => {
-    project.addEventListener('click', () => {
-        projects.forEach(p => p.classList.remove('active'));
-        project.classList.add('active');
-    });
-});
+  
 
   </script>   
     
